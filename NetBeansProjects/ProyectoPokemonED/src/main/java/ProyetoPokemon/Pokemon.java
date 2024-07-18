@@ -1,29 +1,26 @@
 package ProyetoPokemon;
 
-//public static void main(String[] args) {
-        //System.out.println("Hello World!");
-
 public class Pokemon {
     private String nombre;
     private String tipo;
     private String[] debilidades;
-    private int Ataque;
+    private int ataque;
     private int defensa;
     private int ataqueEspecial;
     private int defensaEspecial;
-    private int Vida;
+    private int vida;
     private int velocidad;
     private Movimiento[] movimientos;
     
-    public Pokemon(String nombre, String tipo, String[] debilidades, int puntosAtaque, int defensa, int ataqueEspecial, int defensaEspecial, int puntosSalud, int velocidad){
+    public Pokemon(String nombre, String tipo, String[] debilidades, int ataque, int defensa, int ataqueEspecial, int defensaEspecial, int vida, int velocidad){
         this.nombre = nombre;
         this.tipo = tipo;
         this.debilidades = debilidades;
-        this.Ataque = puntosAtaque;
+        this.ataque = ataque;
         this.defensa = defensa;
         this.ataqueEspecial = ataqueEspecial;
         this.defensaEspecial = defensaEspecial;
-        this.Vida = puntosSalud;
+        this.vida = vida;
         this.velocidad = velocidad;
         this.movimientos = new Movimiento[4];
     }
@@ -41,7 +38,7 @@ public class Pokemon {
     }
 
     public int getAtaque() {
-        return Ataque;
+        return ataque;
     }
 
     public int getDefensa() {
@@ -57,7 +54,7 @@ public class Pokemon {
     }
 
     public int Vida() {
-        return Vida;
+        return vida;
     }
 
     public int getVelocidad() {
@@ -68,13 +65,21 @@ public class Pokemon {
         return movimientos;
     }
     
-    public void atacar(Pokemon oponente, Movimiento movimiento){
-        
+    public void setAtaqueEspecial(int ataqueEspecial){
+        this.ataqueEspecial = ataqueEspecial;
+    }
+    
+    public void setDefensaEspecial(int defensaEspecial){
+        this.defensaEspecial = defensaEspecial;
     }
     
     public void daño (int daño){
-        this.Vida -= daño;
+        this.vida -= daño;
     }
+    
+    
+    
+    
     
     public void usarMovimiento(int indice){
         
@@ -82,6 +87,11 @@ public class Pokemon {
     
     public void cambiarMovimiento(int indice, Movimiento nuevoMovimiento){
         this.movimientos[indice] = nuevoMovimiento;
+    }
+    
+     
+   public void atacar(Pokemon oponente, Movimiento movimiento){
+        
     }
 
 }
