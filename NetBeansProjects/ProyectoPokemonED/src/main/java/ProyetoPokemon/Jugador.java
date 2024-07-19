@@ -28,12 +28,11 @@ public class Jugador {
             actual = actual.getSiguiente();
         }
     }
+    
     public void iniciarBatalla(CPU oponente){
         
     }
-    public void elegirAccion(String accion){
-        
-    }
+  
     
     
     

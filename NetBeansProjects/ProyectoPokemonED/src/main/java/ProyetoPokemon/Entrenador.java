@@ -31,6 +31,7 @@ public class Entrenador {
             actual.setSiguiente(aux);
         }
         contadorEquipo++;   
+        
     }
     
 
