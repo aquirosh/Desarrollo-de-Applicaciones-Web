@@ -34,9 +34,7 @@ public class Entrenador {
         
     }
     
-
-     
-     
+    
      public void mostrarEquipo() {
         Nodo actual = equipoCabeza;
         while (actual != null) {
