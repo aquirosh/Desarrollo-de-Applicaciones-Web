@@ -3,16 +3,15 @@ package ProyetoPokemon;
 public class Pokemon {
     private String nombre;
     private String tipo;
-    private String[] debilidades;
+    private String debilidades;
     private int ataque;
     private int defensa;
     private int ataqueEspecial;
     private int defensaEspecial;
     private int vida;
     private int velocidad;
-    private Movimiento[] movimientos;
     
-    public Pokemon(String nombre, String tipo, String[] debilidades, int ataque, int defensa, int ataqueEspecial, int defensaEspecial, int vida, int velocidad){
+    public Pokemon(String nombre, String tipo, String debilidades, int ataque, int defensa, int ataqueEspecial, int defensaEspecial, int vida, int velocidad){
         this.nombre = nombre;
         this.tipo = tipo;
         this.debilidades = debilidades;
@@ -22,7 +21,6 @@ public class Pokemon {
         this.defensaEspecial = defensaEspecial;
         this.vida = vida;
         this.velocidad = velocidad;
-        this.movimientos = new Movimiento[4];
     }
     
     public String getNombre(){
@@ -33,7 +31,7 @@ public class Pokemon {
         return tipo;
     }
 
-    public String[] getDebilidades() {
+    public String getDebilidades() {
         return debilidades;
     }
 
@@ -61,9 +59,7 @@ public class Pokemon {
         return velocidad;
     }
 
-    public Movimiento[] getMovimientos() {
-        return movimientos;
-    }
+  
     
     public void setAtaqueEspecial(int ataqueEspecial){
         this.ataqueEspecial = ataqueEspecial;
@@ -85,9 +81,7 @@ public class Pokemon {
         
     }
     
-    public void cambiarMovimiento(int indice, Movimiento nuevoMovimiento){
-        this.movimientos[indice] = nuevoMovimiento;
-    }
+
     
      
    public void atacar(Pokemon oponente, Movimiento movimiento){

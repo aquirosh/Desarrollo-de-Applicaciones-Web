@@ -3,6 +3,7 @@ package ProyetoPokemon;
 public class Nodo {
     private Pokemon pokemon;
     private Nodo siguiente;
+ 
     
     public Nodo(Pokemon pokemon){
         this.pokemon = pokemon;
@@ -20,5 +21,7 @@ public class Nodo {
     public Nodo getSiguiente(){
         return siguiente;
     }
+    
+   
     
 }

@@ -2,7 +2,7 @@ package ProyetoPokemon;
 
 public class Agua extends Pokemon {
     public Agua(String nombre){
-        super(nombre,"Agua", new String[]{"Planta"}, 55, 45, 75, 65, 190, 0);
+        super(nombre,"Agua","Planta", 55, 45, 75, 65, 190, 0);
     }
     
     @Override

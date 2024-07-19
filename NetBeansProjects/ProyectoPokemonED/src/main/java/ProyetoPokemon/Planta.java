@@ -2,7 +2,7 @@ package ProyetoPokemon;
 
 public class Planta extends Pokemon {
     public Planta(String nombre){
-        super(nombre,"Planta", new String[]{"Fuego"}, 50, 35, 70, 60, 150, 0);
+        super(nombre,"Planta","Fuego", 50, 35, 70, 60, 150, 0);
     }
    
 
