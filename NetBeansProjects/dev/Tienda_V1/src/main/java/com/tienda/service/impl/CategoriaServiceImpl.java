@@ -1,4 +1,4 @@
-package com.tienda.service.impl;
+package com.tienda.Tienda.service.impl;
 
 import com.tienda.dao.CategoriaDao;
 import com.tienda.domain.Categoria;
@@ -26,7 +26,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     
     @Override
     @Transactional(readOnly=true)
-    public Categoria getCategoria(Categoria categoria){
+    public Categoria getCategoria(Categoria categoria){    
         return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
     }
     
@@ -38,7 +38,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     
     @Override
     @Transactional
-     public void delete(Categoria categoria){
-         categoriaDao.delete(categoria);
-     }
+    public void delete(Categoria categoria){
+        categoriaDao.delete(categoria);
+    }
 }

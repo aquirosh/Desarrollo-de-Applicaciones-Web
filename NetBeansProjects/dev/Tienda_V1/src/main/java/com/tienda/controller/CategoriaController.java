@@ -1,7 +1,8 @@
 package com.tienda.controller;
 
-import com.tienda.domain.Categoria;
+
 import com.tienda.service.CategoriaService;
+import com.tienda.domain.Categoria;
 import com.tienda.service.impl.FirebaseStorageServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,6 @@ public class CategoriaController {
         model.addAttribute("totalCategorias", categorias.size());
         return "/categoria/listado";
     }
-    
     @GetMapping("/nuevo")
     public String categoriaNuevo(Categoria categoria) {
         return "/categoria/modifica";
@@ -64,7 +64,4 @@ public class CategoriaController {
         model.addAttribute("categoria", categoria);
         return "/categoria/modifica";
     }
-    
-    
-    
 }
